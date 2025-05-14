@@ -1,0 +1,34 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="84dp"
+    android:height="95dp"
+    android:viewportWidth="84"
+    android:viewportHeight="95">
+  <path
+      android:pathData="M40,26L56,26A12,12 0,0 1,68 38L68,54A12,12 0,0 1,56 66L40,66A12,12 0,0 1,28 54L28,38A12,12 0,0 1,40 26z"
+      android:fillColor="@color/card_bg"/>
+  <path
+      android:strokeWidth="1"
+      android:pathData="M40,26.5L56,26.5A11.5,11.5 0,0 1,67.5 38L67.5,54A11.5,11.5 0,0 1,56 65.5L40,65.5A11.5,11.5 0,0 1,28.5 54L28.5,38A11.5,11.5 0,0 1,40 26.5z"
+      android:strokeAlpha="0.2"
+      android:fillColor="@color/card_bg"
+      android:strokeColor="#2B89E7"/>
+  <path
+      android:pathData="M51,49L57,55M46,51C42.134,51 39,47.866 39,44C39,40.134 42.134,37 46,37C49.866,37 53,40.134 53,44C53,47.866 49.866,51 46,51Z"
+      android:strokeLineJoin="round"
+      android:strokeWidth="1.8"
+      android:fillColor="@color/card_bg"
+      android:strokeLineCap="round">
+    <aapt:attr name="android:strokeColor">
+      <gradient 
+          android:startX="42.346"
+          android:startY="39.672"
+          android:endX="56.742"
+          android:endY="43.684"
+          android:type="linear">
+        <item android:offset="0" android:color="#FF1A80E5"/>
+        <item android:offset="1" android:color="#FF3594F2"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+</vector>

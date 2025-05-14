@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/includeAppBar"
+        layout="@layout/layout_home_other_appbar" />
+
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:background="@drawable/card_bg"
+        app:queryHint="Search"
+        app:iconifiedByDefault="false"
+        app:searchIcon="@drawable/search"
+        android:elevation="2dp"
+        app:layout_constraintTop_toBottomOf="@id/includeAppBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_18sdp"
+        app:checkedIconVisible="false"
+        app:chipSpacingHorizontal="8dp"
+        app:layout_constraintTop_toBottomOf="@id/searchView"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:chipSpacingVertical="4dp"
+        app:singleSelection="true" />
+
+    <RelativeLayout
+        app:layout_constraintTop_toBottomOf="@id/chipGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <include
+            android:id="@+id/includeNoSearch"
+            layout="@layout/layout_no_help_found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <!-- FAQ List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:paddingHorizontal="16dp"
+           />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

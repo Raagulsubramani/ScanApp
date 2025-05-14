@@ -1,0 +1,192 @@
+[versions]
+agp = "8.9.2"
+androidxCameraView = "1.4.1"
+appauth = "0.11.1"
+appcompatVersion = "1.0.0"
+barcodeScanning = "17.3.0"
+browser = "1.8.0"
+calligraphy = "2.3.0"
+calligraphy3 = "3.1.1"
+cameraCore = "1.4.1"
+cameraCoreVersion = "1.3.0"
+cameraLifecycle = "1.3.0"
+cameraView = "1.4.0"
+cameraViewVersion = "1.3.0"
+ccp = "2.1.2"
+ccpVersion = "2.7.3"
+circleimageview = "3.1.0"
+comGoogleArCore = "1.16.0"
+core = "1.47.0"
+coreVersion = "1.17.1"
+countrycodepicker = "2.6.0"
+credentialsPlayServicesAuth = "1.5.0"
+documentScanner = "16.0.0-beta4"
+facebookAndroidSdk = "18.0.2"
+filamentAndroid = "1.4.5"
+firebaseAuth = "23.2.0"
+githubViewpump = "2.1.0"
+glide = "4.15.0"
+googleApiClient = "1.34.1"
+googleApiClientAndroid = "1.34.0"
+googleApiServicesDrive = "v3-rev136-1.25.0"
+googleApiServicesDriveVersion = "v3-rev305-1.25.0"
+googleCloudDocumentAi = "2.59.0"
+googleCore = "1.34.0"
+googleCoreVersion = "1.32.0"
+googleHttpClientAndroid = "1.12.0-beta"
+googleHttpClientGson = "1.41.0"
+googleidVersion = "1.1.0"
+googleMaterial = "1.0.0"
+googleOauthClientJetty = "1.34.1"
+googlePlayServicesAuth = "20.7.0"
+gradle = "3.4.3"
+grpcOkhttp = "1.69.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+linkedinAndroidSdk = "1.1.4"
+linkedinlogin = "1.0.2"
+linkedinloginVersion = "Tag"
+linkedinsdk = "1.2.0"
+loggingInterceptor = "5.0.0-alpha.11"
+lottie = "6.6.3"
+material = "1.12.0"
+materialVersion = "1.9.0"
+objectDetectionVersion = "17.0.0"
+okhttp = "4.12.0"
+okhttp3Integration = "4.13.0"
+okhttpVersion = "4.9.3"
+opencvAndroid = "4.5.1"
+opencvAndroidVersion = "5.0.0-alpha"
+permissionx = "1.8.1"
+playServicesAuth = "21.3.0"
+playServicesAuthVersion = "20.8.0"
+playServicesMlkitDocumentScanner = "16.0.0-beta1"
+retrofit = "2.9.0"
+roomCompiler = "2.4.3"
+roomCompilerVersion = "2.5.2"
+roomRuntime = "2.6.1"
+roomRuntimeVersion = "2.5.2"
+roundedimageview = "v1.0.1"
+roundedimageviewVersion = "2.3.0"
+sdpAndroid = "1.1.1"
+swipeRevealLayout = "1.4.1"
+swipereveallayoutVersion = "1.4.0"
+textRecognition = "16.0.1"
+sceneformUx = "1.17.1"
+playServicesDrive = "17.0.0"
+rendering = "1.17.1"
+objectDetectionCommon = "18.0.0"
+objectDetection = "17.0.2"
+firebaseCrashlyticsBuildtools = "3.0.2"
+textRecognitionVersion = "16.0.0"
+viewpagerindicator = "latestVersion"
+viewpagerindicatorVersion = "1.2.3"
+viewpump = "2.0.3"
+viewpumpVersion = "2.0.2"
+volley = "1.2.1"
+zoomage = "1.3.1"
+googleid = "1.1.1"
+
+[libraries]
+androidx-appcompat-v100 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+androidx-browser = { module = "androidx.browser:browser", version.ref = "browser" }
+androidx-camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "cameraView" }
+androidx-camera-core-v130 = { module = "androidx.camera:camera-core", version.ref = "cameraCoreVersion" }
+androidx-camera-lifecycle-v130 = { module = "androidx.camera:camera-lifecycle", version.ref = "cameraLifecycle" }
+androidx-camera-view-v130 = { module = "androidx.camera:camera-view", version.ref = "cameraViewVersion" }
+androidx-camera-view-v141 = { module = "androidx.camera:camera-view", version.ref = "androidxCameraView" }
+androidx-credentials = { module = "androidx.credentials:credentials", version.ref = "credentialsPlayServicesAuth" }
+androidx-credentials-play-services-auth = { module = "androidx.credentials:credentials-play-services-auth", version.ref = "credentialsPlayServicesAuth" }
+androidx-room-compiler-v252 = { module = "androidx.room:room-compiler", version.ref = "roomCompilerVersion" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomRuntime" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" }
+androidx-room-runtime-v252 = { module = "androidx.room:room-runtime", version.ref = "roomRuntimeVersion" }
+appauth = { module = "net.openid:appauth", version.ref = "appauth" }
+barcode-scanning = { module = "com.google.mlkit:barcode-scanning", version.ref = "barcodeScanning" }
+calligraphy = { module = "uk.co.chrisjenx:calligraphy", version.ref = "calligraphy" }
+calligraphy3 = { module = "io.github.inflationx:calligraphy3", version.ref = "calligraphy3" }
+camera-core = { module = "androidx.camera:camera-core", version.ref = "cameraCore" }
+camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "cameraView" }
+camera-view = { module = "androidx.camera:camera-view", version.ref = "cameraView" }
+ccp = { module = "com.hbb20:ccp", version.ref = "ccp" }
+ccp-v273 = { module = "com.hbb20:ccp", version.ref = "ccpVersion" }
+circleimageview = { module = "de.hdodenhof:circleimageview", version.ref = "circleimageview" }
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+core = { module = "com.google.ar:core", version.ref = "core" }
+core-v1160 = { module = "com.google.ar:core", version.ref = "comGoogleArCore" }
+core-v1320 = { module = "com.google.ar:core", version.ref = "googleCoreVersion" }
+core-v1340 = { module = "com.google.ar:core", version.ref = "googleCore" }
+countrycodepicker = { module = "com.github.joielechong:countrycodepicker", version.ref = "countrycodepicker" }
+document-scanner = { module = "com.google.mlkit:document-scanner", version.ref = "documentScanner" }
+facebook-android-sdk = { module = "com.facebook.android:facebook-android-sdk", version.ref = "facebookAndroidSdk" }
+filament-android = { module = "com.google.android.filament:filament-android", version.ref = "filamentAndroid" }
+firebase-auth = { module = "com.google.firebase:firebase-auth", version.ref = "firebaseAuth" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+gltfio-android = { module = "com.google.android.filament:gltfio-android", version.ref = "filamentAndroid" }
+google-api-client = { module = "com.google.api-client:google-api-client", version.ref = "googleApiClientAndroid" }
+google-api-client-android = { module = "com.google.api-client:google-api-client-android", version.ref = "googleApiClientAndroid" }
+google-api-client-v1341 = { module = "com.google.api-client:google-api-client", version.ref = "googleApiClient" }
+google-api-services-drive = { module = "com.google.apis:google-api-services-drive", version.ref = "googleApiServicesDrive" }
+google-api-services-drive-vv3rev3051250 = { module = "com.google.apis:google-api-services-drive", version.ref = "googleApiServicesDriveVersion" }
+google-cloud-document-ai = { module = "com.google.cloud:google-cloud-document-ai", version.ref = "googleCloudDocumentAi" }
+google-http-client-android = { module = "com.google.http-client:google-http-client-android", version.ref = "googleHttpClientAndroid" }
+google-http-client-gson = { module = "com.google.http-client:google-http-client-gson", version.ref = "googleHttpClientGson" }
+google-oauth-client-jetty = { module = "com.google.oauth-client:google-oauth-client-jetty", version.ref = "googleOauthClientJetty" }
+googleid-v110 = { module = "com.google.android.libraries.identity.googleid:googleid", version.ref = "googleidVersion" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
+grpc-okhttp = { module = "io.grpc:grpc-okhttp", version.ref = "grpcOkhttp" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+linkedin-android-sdk = { module = "com.linkedin.android.sdk:linkedin-android-sdk", version.ref = "linkedinAndroidSdk" }
+linkedinlogin = { module = "com.github.Mindinventory:LinkedInLogin", version.ref = "linkedinlogin" }
+linkedinlogin-vtag = { module = "com.github.Mindinventory:LinkedInLogin", version.ref = "linkedinloginVersion" }
+linkedinsdk = { module = "com.AbdAllahAbdElFattah13:linkedinsdk", version.ref = "linkedinsdk" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+makeramen-roundedimageview = { module = "com.makeramen:roundedimageview", version.ref = "roundedimageviewVersion" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+material-v100 = { module = "com.google.android.material:material", version.ref = "googleMaterial" }
+material-v190 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+object-detection-v1700 = { module = "com.google.mlkit:object-detection", version.ref = "objectDetectionVersion" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+okhttp-v493 = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttpVersion" }
+okhttp3-integration = { module = "com.github.bumptech.glide:okhttp3-integration", version.ref = "okhttp3Integration" }
+opencv-android = { module = "org.opencv:opencv-android", version.ref = "opencvAndroid" }
+opencv-android-v500alpha = { module = "org.opencv:opencv-android", version.ref = "opencvAndroidVersion" }
+permissionx = { module = "com.guolindev.permissionx:permissionx", version.ref = "permissionx" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
+play-services-auth-v2070 = { module = "com.google.android.gms:play-services-auth", version.ref = "googlePlayServicesAuth" }
+play-services-auth-v2080 = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuthVersion" }
+play-services-mlkit-document-scanner = { module = "com.google.android.gms:play-services-mlkit-document-scanner", version.ref = "playServicesMlkitDocumentScanner" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+roundedimageview = { module = "com.github.mmmelik:RoundedImageView", version.ref = "roundedimageview" }
+sceneform = { module = "com.google.ar.sceneform:sceneform", version.ref = "coreVersion" }
+sceneform-core = { module = "com.google.ar.sceneform:core", version.ref = "coreVersion" }
+sdp-android = { module = "com.intuit.sdp:sdp-android", version.ref = "sdpAndroid" }
+swipereveallayout = { module = "com.github.chthai64:SwipeRevealLayout", version.ref = "swipereveallayoutVersion" }
+text-recognition = { module = "com.google.mlkit:text-recognition", version.ref = "textRecognition" }
+sceneform-ux = { group = "com.google.ar.sceneform.ux", name = "sceneform-ux", version.ref = "sceneformUx" }
+play-services-drive = { group = "com.google.android.gms", name = "play-services-drive", version.ref = "playServicesDrive" }
+rendering = { group = "com.google.ar.sceneform", name = "rendering", version.ref = "rendering" }
+object-detection-common = { group = "com.google.mlkit", name = "object-detection-common", version.ref = "objectDetectionCommon" }
+object-detection = { group = "com.google.mlkit", name = "object-detection", version.ref = "objectDetection" }
+firebase-crashlytics-buildtools = { group = "com.google.firebase", name = "firebase-crashlytics-buildtools", version.ref = "firebaseCrashlyticsBuildtools" }
+text-recognition-v1600 = { module = "com.google.mlkit:text-recognition", version.ref = "textRecognitionVersion" }
+viewpagerindicator = { module = "com.github.zhpanvip:viewpagerindicator", version.ref = "viewpagerindicator" }
+viewpagerindicator-v123 = { module = "com.github.zhpanvip:viewpagerindicator", version.ref = "viewpagerindicatorVersion" }
+viewpump = { module = "io.github.inflationx:viewpump", version.ref = "viewpump" }
+viewpump-v202 = { module = "io.github.inflationx:viewpump", version.ref = "viewpumpVersion" }
+viewpump-v210 = { module = "io.github.inflationx:viewpump", version.ref = "githubViewpump" }
+volley = { module = "com.android.volley:volley", version.ref = "volley" }
+zoomage = { module = "com.jsibbold:zoomage", version.ref = "zoomage" }
+googleid = { group = "com.google.android.libraries.identity.googleid", name = "googleid", version.ref = "googleid" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+

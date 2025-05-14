@@ -1,0 +1,7 @@
+<paths>
+    <external-path
+        name="external_files"
+        path="Android/data/com.gmscan/files/Pictures/" />
+    <external-path name="downloads" path="Download/"/>
+    <cache-path name="cache_files" path="."/>
+</paths>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_default">16dp</dimen>
+    <dimen name="image_size">100dp</dimen>
+    <dimen name="card_elevation">6dp</dimen>
+    <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="text_margin_bottom">8dp</dimen>
+    <dimen name="text_margin_top">16dp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="camera_preview_height">280dp</dimen>
+    <dimen name="overlay_view_height">180dp</dimen>
+    <dimen name="overlay_view_margin_top">50dp</dimen>
+    <dimen name="overlay_view_margin_horizontal">10dp</dimen>
+    <dimen name="edittext_padding">10dp</dimen>
+    <dimen name="edittext_margin_top">10dp</dimen>
+    <dimen name="edittext_margin_bottom">10dp</dimen>
+    <dimen name="scrollview_padding">10dp</dimen>
+    <dimen name="fab_margin">10dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="button_margin_bottom">16dp</dimen>
+    <dimen name="button_margin_horizontal">8dp</dimen>
+    <dimen name="recyclerview_padding_bottom">20dp</dimen>
+    <dimen name="button_text_size">12sp</dimen>
+    <dimen name="no_history_message_text_size">18sp</dimen>
+
+    <dimen name="overlay_20sdp">@dimen/_20sdp</dimen>
+    <dimen name="overlay_60sdp">@dimen/_60sdp</dimen>
+
+    <dimen name="logo_height">20dp</dimen>
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/includeAppBar"
+        layout="@layout/layout_details_appbar"/>
+
+    <!-- Camera Preview Container -->
+    <RelativeLayout
+        android:id="@+id/cameraContainer"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/includeAppBar">
+
+        <androidx.camera.view.PreviewView
+            android:background="@color/card_bg"
+            android:id="@+id/cameraPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <!-- Scanning Rectangle -->
+        <View
+            android:id="@+id/scannerOverlay"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rectangle_overlay"/>
+    </RelativeLayout>
+
+    <!-- Input Fields Container -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cameraContainer"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Full Text from OCR -->
+            <EditText
+                android:id="@+id/isbnEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/Isbn_no"
+                android:padding="12dp"
+                android:textColor="@color/card_color"
+                android:textColorHint="@color/card_color"
+                android:layout_marginBottom="12dp"
+                android:focusable="false"
+                android:importantForAutofill="no"
+                android:inputType="text"/>
+
+            <!-- Book Title -->
+            <EditText
+                android:id="@+id/bookTitleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/book_title"
+                android:padding="12dp"
+                android:textColor="@color/card_color"
+                android:textColorHint="@color/card_color"
+                android:layout_marginBottom="12dp"
+                android:autofillHints="name"
+                android:inputType="text"/>
+
+            <!-- Author -->
+            <EditText
+                android:id="@+id/authorEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/author"
+                android:inputType=""
+                android:padding="12dp"
+                android:textColor="@color/card_color"
+                android:textColorHint="@color/card_color"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Publish Date -->
+            <EditText
+                android:id="@+id/publishDateEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/published_date"
+                android:inputType="date"
+                android:padding="12dp"
+                android:textColor="@color/card_color"
+                android:textColorHint="@color/card_color"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Number of Pages -->
+            <EditText
+                android:id="@+id/pagesEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/number_of_page"
+                android:inputType="number"
+                android:padding="12dp"
+                android:textColor="@color/card_color"
+                android:textColorHint="@color/card_color"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Subject -->
+            <!-- Subject -->
+            <EditText
+                android:id="@+id/subjectEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/subject"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColor="@color/card_color"
+                android:textColorHint="@color/card_color"
+                android:layout_marginBottom="12dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

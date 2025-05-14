@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Top Section with curved bottom using PNG image - increased height -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_profilebackground"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius_bottom_left="30dp"
+            app:riv_corner_radius_bottom_right="30dp"
+            app:riv_border_width="0dp" />
+
+        <!-- Back Button - adjusted position -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_back"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/back_button"
+            app:tint="@color/bg" />
+
+        <!-- Logo - adjusted position -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_name_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:contentDescription="@string/application_logo"/>
+    </RelativeLayout>
+
+    <!-- Content Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Title Text -->
+        <TextView
+            android:id="@+id/verificationTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_verification_code"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/card_color"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Instructions Text -->
+        <TextView
+            android:id="@+id/instructionsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_the_code_we_have_sent_to_your_email"
+            android:textAlignment="center"
+            android:textColor="#757575"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Email Display -->
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email_domain_com"
+            android:textAlignment="center"
+            android:textColor="#2196F3"
+            android:textSize="14sp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- OTP Input Boxes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <!-- First Digit -->
+            <EditText
+                android:id="@+id/digit1"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:autofillHints=""
+                android:background="@drawable/otp_box_background"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"
+                android:importantForAccessibility="yes"
+                android:hint="@string/_0"
+                android:textColor="@color/card_color"
+                android:textColorHint="@color/card_color"/>
+
+            <!-- Second Digit -->
+            <EditText
+                android:id="@+id/digit2"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:autofillHints=""
+                android:background="@drawable/otp_box_background"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"
+                android:importantForAccessibility="yes"
+                android:hint="@string/_0"
+                android:textColor="@color/card_color"
+                android:textColorHint="@color/card_color"/>
+
+            <!-- Third Digit -->
+            <EditText
+                android:id="@+id/digit3"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:autofillHints=""
+                android:background="@drawable/otp_box_background"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"
+                android:importantForAccessibility="yes"
+                android:hint="@string/_0"
+                android:textColor="@color/card_color"
+                android:textColorHint="@color/card_color"/>
+
+            <!-- Fourth Digit -->
+            <EditText
+                android:id="@+id/digit4"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:autofillHints=""
+                android:background="@drawable/otp_box_background"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:importantForAccessibility="yes"
+                android:hint="@string/_0"
+                android:textColor="@color/card_color"
+                android:textColorHint="@color/card_color"/>
+        </LinearLayout>
+
+        <!-- Submit Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/submit"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#2196F3"
+            app:cornerRadius="24dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Resend Code Text -->
+        <TextView
+            android:id="@+id/resendCodeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/resend_code"
+            android:textAlignment="center"
+            android:textColor="#2196F3"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:minHeight="48dp"
+            android:padding="16dp"/>
+    </LinearLayout>
+</LinearLayout>

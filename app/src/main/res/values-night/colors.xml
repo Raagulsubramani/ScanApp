@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#318DE8</color>
+    <color name="purple_700">#1A80E5</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="edittext_background">#F0F0F0</color>
+    <color name="background">#000000</color>
+    <color name="primary">#1976D2</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="teal_icon">#009688</color>
+    <color name="colorPrimary">#6200EE</color> <!-- Example Purple -->
+    <color name="colorAccent">#03DAC5</color>
+    <color name="gray">#808080</color>
+    <color name="google_blue">#4285F4</color>
+    <color name="facebook_blue">#3b5998</color>
+    <color name="light_blue">#ADD8E6</color>
+    <color name="card_color">#FFFFFF</color>
+    <color name="selected_color">#1A80E5</color>
+    <color name="deselected_color">#747577</color>
+    <color name="bg">#000000</color>
+    <color name="card_bg">#000000</color>
+    <color name="back_color">@color/white</color>
+    <color name="profile_icon_color">#FFFFFF</color>
+    <color name="border">@color/white</color>
+    <color name="two_corners_bg">#545454</color>
+    <color name="card_bg_popup">@color/two_corners_bg</color>
+</resources>

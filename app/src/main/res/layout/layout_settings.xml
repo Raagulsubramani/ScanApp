@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header with Back Button and Title on the same line -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/navigate_back"
+            android:padding="12dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/settings_title"
+            android:textSize="@dimen/_16sdp"
+            />
+    </RelativeLayout>
+
+    <!-- Scan Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/scan_section_title"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- High Quality Scan - Improved touch target -->
+    <LinearLayout
+        android:id="@+id/container_high_quality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:minHeight="48dp"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:id="@+id/label_high_quality"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/high_quality_scan"
+            android:textSize="14sp"
+            android:labelFor="@id/switch_high_quality"/>
+
+        <Switch
+            android:id="@+id/switch_high_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:contentDescription="@string/high_quality_scan_switch_desc"
+            style="@style/CustomSwitchStyle"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </LinearLayout>
+
+    <!-- Auto Crop Image - Improved touch target -->
+    <LinearLayout
+        android:id="@+id/container_auto_crop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:minHeight="48dp"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:id="@+id/label_auto_crop"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/Auto_crop_image"
+            android:textSize="14sp"
+            android:labelFor="@id/switch_auto_crop"/>
+
+        <Switch
+            android:id="@+id/switch_auto_crop"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:checked="true"
+            android:contentDescription="@string/auto_crop_switch_desc"
+            style="@style/CustomSwitchStyle"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/border"
+        android:layout_marginVertical="16dp"/>
+
+    <!-- Files and Storage Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Files_and_storage"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Save Original Image - Improved touch target -->
+    <LinearLayout
+        android:id="@+id/container_save_original"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:minHeight="48dp"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:id="@+id/label_save_original"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/Save_image"
+            android:textSize="14sp"
+            android:labelFor="@id/switch_save_original"/>
+
+        <Switch
+            android:id="@+id/switch_save_original"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:contentDescription="@string/save_image_switch_desc"
+            style="@style/CustomSwitchStyle"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </LinearLayout>
+
+</LinearLayout>

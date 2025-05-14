@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_20sdp">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/welcome"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textSize="@dimen/_22sdp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_350sdp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/welcome" />
+
+    <TextView
+        android:id="@+id/txtPrivacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnGetStarted"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:textColor="@color/deselected_color"
+        android:text="@string/continue_by"
+        android:textSize="@dimen/_11sdp" />
+
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_rounded"
+        android:text="@string/get_started"
+        android:elevation="@dimen/_4sdp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

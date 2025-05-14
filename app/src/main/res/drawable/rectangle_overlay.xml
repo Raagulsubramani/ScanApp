@@ -1,0 +1,13 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@android:color/transparent" />
+    <stroke
+        android:width="3dp"
+        android:color="@color/blue" />
+
+    <!-- Define the rectangle size with fixed dimensions (e.g., 300dp width and 200dp height) -->
+    <size
+        android:width="300dp"
+        android:height="200dp" />
+</shape>

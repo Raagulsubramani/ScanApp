@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/card_bg" /> <!-- Background color of the EditText -->
+    <corners android:radius="@dimen/_10sdp" /> <!-- Set the radius for the rounded corners -->
+    <stroke android:color="@color/card_border" android:width="1dp"/> <!-- Optional: Border color and width -->
+</shape>
